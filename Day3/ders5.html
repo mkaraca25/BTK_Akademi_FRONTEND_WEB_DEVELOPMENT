@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" onclick="lokasyonAl()">Konum Bilgisi Getir</button><br><br><br>
+
+    <label>İsim:</label>
+    <input type="text" id="isim" /><br>
+    <label>Soyisim:</label>
+    <input type="text" id="soyisim" /><br>
+
+    <button type="button" onclick="degerSakla()">Değer Sakla</button>
+
+
+    <br><br><br>
+    <p id="lokasyon">....</p>
+
+    <button type="button" onclick="degerGetir()">Değer Getir</button>
+
+
+    <br>
+    <p id="sonuc">sonuc</p>
+
+    <script>
+        var lokasyon = document.getElementById("lokasyon");
+
+        function degerGetir() {
+            var sonuc = document.getElementById("sonuc");
+            sonuc.innerHTML = "<br> İsim: " + localStorage.getItem("isim") + "<br> Soyisim: " + localStorage.getItem("soyisim") + "<br> Enlem: " + localStorage.getItem("enlem") + "<br> Boylam: " + localStorage.getItem("boylam");
+        }
+
+        function degerSakla() {
+
+            var isim = document.getElementById("isim").value;
+            localStorage.setItem('isim', isim)
+
+            var soyisim = document.getElementById("soyisim").value;
+            localStorage.setItem('soyisim', soyisim)
+        }
+
+        function lokasyonAl() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                lokasyon.innerHTML = "Sen uçmuşsun";
+            }
+        }
+
+        function showPosition(position) {
+            lokasyon.innerHTML = "Enlem: " + position.coords.latitude + "<br> Boylam: " + position.coords.longitude;
+
+            localStorage.setItem('enlem', position.coords.latitude)
+            localStorage.setItem('boylam', position.coords.longitude)
+        }
+    </script>
+
+
+
+
+    <h3><a href="index.html">Ana Sayfa</a></h3>
+    <h3><a href="ders1.html">Ders 1</a></h3>
+    <h3><a href="ders2.html">Ders 2</a></h3>
+    <h3><a href="ders3.html">Ders 3</a></h3>
+    <h3><a href="ders4.html">Ders 4</a></h3>
+    <h3><a href="ders5.html">Ders 5</a></h3>
+
+</body>
+
+</html>

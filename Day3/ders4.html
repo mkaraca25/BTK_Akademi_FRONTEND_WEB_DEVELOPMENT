@@ -14,7 +14,7 @@
     <input type="text" id="data" />
     <button type="button" onclick="veriSakla()">Veriyi Sakla</button><br><br>
     <button type="button" onclick="veriGetir()">Veriyi Getir</button>
-    <p id="data">Birazdan Görüşürüz</p>
+    <p id="veri">Birazdan Görüşürüz</p>
 
 
     <script>
@@ -24,6 +24,9 @@
         }
 
         function veriGetir() {
+            document.getElementById("veri").innerHTML =
+                "İki kişinin bildiği sır değildir. Değer: " +
+                localStorage.getItem('data')
 
         }
     </script>
@@ -32,7 +35,8 @@
     <h3><a href="ders1.html">Ders 1</a></h3>
     <h3><a href="ders2.html">Ders 2</a></h3>
     <h3><a href="ders3.html">Ders 3</a></h3>
-    <h3><a href="ders4.html">Ders 3</a></h3>
+    <h3><a href="ders4.html">Ders 4</a></h3>
+    <h3><a href="ders5.html">Ders 5</a></h3>
 
 </body>
 
