@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="200" height="100" style="border: 1px solid black;"></canvas>
+    <script>
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(100, 30);
+        /*ctx.lineTo(200, 0);
+        ctx.lineTo(200, 200);
+        ctx.lineTo(100, 100);
+        ctx.lineTo(0, 200);
+        ctx.lineTo(100, 200);
+        ctx.lineTo(100, 100);
+        ctx.lineTo(0, 100);*/
+        ctx.stroke();
+        //Çember
+        ctx.beginPath();
+        ctx.arc(120, 30, 18, 0, 2 * Math.PI)
+        ctx.stroke();
+
+        ctx.font = "25px arial";
+        ctx.fillText("M", 110, 40);
+        //ctx.fillText("yarın inş", 10, 140)*/
+    </script>
+    <br>
+    <h2>Ders 2</h2>
+    <h3><a href="index.html">Anasayfa</a></h3>
+    <h3><a href="ders1.html">Ders 1</a></h3>
+    <h3><a href="ders2.html">Ders 2</a></h3>
+    <h3><a href="ders3.html">Ders 3</a></h3>
+</body>
+
+</html>

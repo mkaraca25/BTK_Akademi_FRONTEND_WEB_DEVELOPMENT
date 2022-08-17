@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1 id="baslik"> Selam gelecek</h1>
+    <h3 id="isim"> isim gelecek</h3>
+    <h3 id="soyad"> soyad gelecek</h3>
+    <h3 id="tarih"> tarih gelecek</h3>
+
+    <button type="button" onclick="degistir()">Tıkla değişimi yaşa</button>
+
+
+    <script>
+        function degistir() {
+            document.getElementById('baslik').innerHTML = 'Merhaba';
+            document.getElementById('isim').innerHTML = 'Melik';
+            document.getElementById('soyad').innerHTML = 'KARACA';
+            document.getElementById('tarih').innerHTML = Date()
+        }
+    </script>
+    <p id="paragraf"></p>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+    <h2>Ders 1</h2>
+    <h3><a href="index.html">Anasayfa</a></h3>
+    <h3><a href="ders1.html">Ders 1</a></h3>
+    <h3><a href="ders2.html">Ders 2</a></h3>
+    <h3><a href="ders3.html">Ders 3</a></h3>
+
+</body>
+
+</html>
