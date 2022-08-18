@@ -63,9 +63,47 @@ tr:hover {
     background-color: gray;
 }
 
+#h2 {
+    color: red;
+}
+
+#resim {
+    border-radius: 70px, 20px, 50px, 5px;
+    border: 4px double purple;
+}
+
+body {
+    font-family: Tahoma;
+}
+
+span {
+    font-family: 'Courier New';
+}
+
+li {
+    font-family: Arial;
+    font-weight: bold;
+}
+
+h2.nokta {
+    color: red;
+}
+
+.nokta {
+    background-color: yellow;
+    width: 50%;
+}
+
+.paragraf {
+    background-color: pink;
+    border: 2px solid purple;
+    padding: 5px;
+    color: rgb(211, 35, 35);
+}
+
 input[type="text"],
 input[type=password] {
-    width: 97%;
+    width: 95%;
     padding: 10px;
     margin: 10px;
     border: 1px solid red;
@@ -93,7 +131,7 @@ input[type="submit"].hover {
 }
 
 div {
-    width: 100%;
+    width: 90%;
     height: 100%;
     padding: 10px;
     border: 2px solid red;
