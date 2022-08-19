@@ -1,0 +1,92 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Turkey Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0300
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0300
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Halit Sarıoğlu (İris - TR/İstanbul):mailto:Halit.Sarioglu@
+ iris-tele.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=melikkrc25
+ @gmail.com:mailto:melikkrc25@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=ozgur.ayva
+ lik@nokia.com:mailto:ozgur.ayvalik@nokia.com
+ATTENDEE;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=omer_faruk
+ .durmus@nokia.com:mailto:omer_faruk.durmus@nokia.com
+DESCRIPTION;LANGUAGE=en-US:Merhaba\,\n\nAltta konu başlıkları bulunan su
+ num ve görüşme\;\n\n\nInternet altyapılarında kullanılan teknolojile
+ r\;\n\nKullanılan access cihazları -   bulabilirsen..\n\nDSL(bakır)   v
+ e GPON ( Fiber) teknolojileri  nedir ?\n\nDSL çeşitleri\,  hızları vs.
+ . gibi\n\nGPON’da kullanılan hızlar ?\n\nBakır şebeke ile fiber şeb
+ ekenin birbirine karşı avantaj\,  dezavantajları gibi..\n\nNetwork stan
+ dartları ve Layer lar vs..\n\n\n\n_______________________________________
+ _________________________________________\nMicrosoft Teams toplantısı\nB
+ ilgisayarınızda veya mobil uygulamanızda katılın\nToplantıya katılm
+ ak için buraya tıklayın<https://teams.microsoft.com/l/meetup-join/19%3a
+ meeting_MjRkYjNmNzQtYWNlNy00ZWYwLWE3ZGUtMjA5NDhlZWYzNjM1%40thread.v2/0?con
+ text=%7b%22Tid%22%3a%22a794b280-a1cb-4ce3-98dd-34ee3270048b%22%2c%22Oid%22
+ %3a%2289f1a4ee-ec12-459f-807e-2d8d25b50e87%22%7d>\nToplantı Kimliği: 376
+  080 521 69\nGeçiş kodu: pWYW6k\nTeams’i İndirin<https://www.microsof
+ t.com/en-us/microsoft-teams/download-app> | Web'de katılın<https://www.m
+ icrosoft.com/microsoft-teams/join-a-meeting>\nDaha Fazla Bilgi Edinin<http
+ s://aka.ms/JoinTeamsMeeting> | Toplantı seçenekleri<https://teams.micros
+ oft.com/meetingOptions/?organizerId=89f1a4ee-ec12-459f-807e-2d8d25b50e87&t
+ enantId=a794b280-a1cb-4ce3-98dd-34ee3270048b&threadId=19_meeting_MjRkYjNmN
+ zQtYWNlNy00ZWYwLWE3ZGUtMjA5NDhlZWYzNjM1@thread.v2&messageId=0&language=tr-
+ TR>\n_____________________________________________________________________
+ ___________\n
+UID:040000008200E00074C5B7101A82E00800000000F0E27AB941B2D801000000000000000
+ 01000000010607A65DBB45144A01CEB6579E6779F
+SUMMARY;LANGUAGE=en-US:Erzurum FSE  aday- Sunum
+DTSTART;TZID=Turkey Standard Time:20220819T150000
+DTEND;TZID=Turkey Standard Time:20220819T160000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20220817T140036Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:2120781808
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_MjRkYjNmNzQtYWNlNy00ZWYwLWE3ZGUtMjA5NDhlZWYzNjM1%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%22a794b280-a1cb-4ce3-98dd-34ee3270048b%22%2c%22O
+ id%22%3a%2289f1a4ee-ec12-459f-807e-2d8d25b50e87%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/a794b280-a1cb-4ce3-98dd-34ee3270048b/89f1a4ee-ec12-459f-807e-2
+ d8d25b50e87/19_meeting_MjRkYjNmNzQtYWNlNy00ZWYwLWE3ZGUtMjA5NDhlZWYzNjM1@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_MjRkYjNmNzQtYWNlNy00ZWY
+ wLWE3ZGUtMjA5NDhlZWYzNjM1@thread.v2"\,"rid":0\,"mid":0\,"uid":null\,"priva
+ te":true\,"type":0}
+X-MICROSOFT-ONLINEMEETINGCONFLINK:conf:sip:Halit.Sarioglu@iris-tele.com\;gr
+ uu\;opaque=app:conf:focus:id:teams:2:0!19:meeting_MjRkYjNmNzQtYWNlNy00ZWYw
+ LWE3ZGUtMjA5NDhlZWYzNjM1-thread.v2!89f1a4eeec12459f807e2d8d25b50e87!a794b2
+ 80a1cb4ce398dd34ee3270048b
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
