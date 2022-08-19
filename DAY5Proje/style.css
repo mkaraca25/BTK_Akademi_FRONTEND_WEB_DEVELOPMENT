@@ -118,3 +118,13 @@ img {
 h3 {
     text-align: center;
 }
+
+h3:hover {
+    background-color: blanchedalmond;
+    width: 70%;
+    text-align: start;
+    border-radius: 50px 15px 50px 4px;
+    padding-left: 10%;
+    padding-right: 5%;
+    transform: rotate(7deg);
+}
