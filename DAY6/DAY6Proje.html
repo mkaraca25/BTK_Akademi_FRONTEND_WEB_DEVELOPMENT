@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body class="vsc-initialized">
+    <h2 class="text-center">Drop Menü</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="list-group">
+                <a href="index.html" class="list-group-item list-group-item-action">Anasayfa</a>
+                <a href="ders1.html" class="list-group-item list-group-item-action">Albüm Örneği</a>
+                <a href="ders2.html" class="list-group-item list-group-item-action">Temel Bootstrap</a>
+                <a href="ders3.html" class="list-group-item list-group-item-action">Özel bir husus</a>
+                <a href="ders4.html" class="list-group-item list-group-item-action">Bölümleme</a>
+                <a href="ders5.html" class="list-group-item list-group-item-action">Formlar</a>
+            </div>
+        </div>
+        <div class="col-md-9"> <br><br>
+            <h2>Dropdown Menü</h2>
+            <div class="container">
+                <div class="dropdown">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Menü</button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-header">Sepet Elemanları</div>
+                        <a href="#" class="dropdown-item">Erzurum 
+                            <img src="resim.jpg" width="200px" height="100px"/>
+                        </a>
+                        <a href="#" class="dropdown-item">Samsun
+                            <img src="resim.jpg" width="200px" height="100px"/>
+                        </a>
+                        <a href="#" class="dropdown-item">Ankara
+                            <img src="resim.jpg" width="200px" height="100px"/>
+                        </a>
+                        <a href="#" class="dropdown-item">Satın Al</a>
+                    </div>
+                </div>
+                <h2>Formlar</h2>
+                <div class="col-md-6">
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="firstName" placeholder="İsminiz" /><br>
+                            <input type="text" class="form-control" id="lastName" placeholder="Soyadınız" /><br>
+                            <input type="text" class="form-control" id="email" placeholder="Mail Adresiniz" /><br>
+                            <input type="text" class="form-control" id="password" placeholder="Şifreniz" /><br>
+                            <select class="form-control">
+                                <option  selected="nothing selected">Seçiniz</option>
+                                <option >İstanbul</option>
+                                <option >Ankara</option>
+                                <option >Samsun</option>
+                                <option >Erzurum</option>
+        
+                            </select>
+                            <br>
+                            <div class="form-check">
+                                <label form="term" class="form-check-label">
+                                    <input type="checkbox" class="form-check-input"/>
+                                    Okudum ve kabul ediyorum.
+                                </label></div><br><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rd" id="rd1" checked>
+                                <label for="rd1" class="form-check-label">Evli
+                                    
+                                </label><br>
+                                <input class="form-check-input" type="radio" name="rd" id="rd2" checked>
+                                <label for="rd2" class="form-check-label">Bekar
+                                    
+                                </label><br>
+                            </div><br><br>
+                            <button type="submit" class="btn btn-success">Sisteme Giriş</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-3">
+        </div>
+        <div class="col-md-9">
+            <header>
+                <div class="collapse bg-dark" id="navbarHeader">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-8 col-md-7 py-4">
+                                <h4 class="text-white">About</h4>
+                                <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or
+                                    contact information.
+                                </p>
+                            </div>
+                            <div class="col-sm-4 offset-md-1 py-4">
+                                <h4 class="text-white">Contact</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                                    <li><a href="#" class="text-white">Like on Facebook</a></li>
+                                    <li><a href="#" class="text-white">Email me</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar navbar-dark bg-dark shadow-sm">
+                    <div class="container d-flex justify-content-between">
+                        <a href="#" class="navbar-brand d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                            <strong>Album</strong>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    </div>
+                </div>
+            </header>
+
+            <main role="main">
+
+                <section class="jumbotron text-center">
+                    <div class="container">
+                        <h1>Türkiye'nin Şehirleri</h1>
+                        <p class="lead text-muted">Az gez de Türkiye'nin güzelliklerini gör!.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                        </p>
+                    </div>
+                </section>
+
+                <div class="album py-5 bg-light">
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img src="resim.jpg" width="200px" height="200px" />
+                                    <div class="card-body">
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                            </div>
+                                            <small class="text-muted">9 mins</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img src="resim.jpg" width="200px" height="200px" />
+                                    <div class="card-body">
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                            </div>
+                                            <small class="text-muted">9 mins</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img src="resim.jpg" width="200px" height="200px" />
+                                    <div class="card-body">
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                            </div>
+                                            <small class="text-muted">9 mins</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <p>Birinci alışveriş listesi aşağıda sıralanmıştır.</p>
+                <table class="table table-striped table-bordered table-hover text-center">
+                    <caption class="text-center">Birinci Table</caption>
+                    <tr>
+                        <th>Id</th>
+                        <th>Ürün Adı</th>
+                        <th>Kategori</th>
+                        <th>Fiyat</th>
+                        <th>Stok Adedi</th>
+                    </tr>
+                    <tr>
+                        <td class="table-success">1</td>
+                        <td>Klavye</td>
+                        <td>Bilgisayar</td>
+                        <td class="table-danger">1500</td>
+                        <td>50</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>2</td>
+                        <td>Klavye</td>
+                        <td>Bilgisayar</td>
+                        <td class="table-warning">2500</td>
+                        <td>400</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>3</td>
+                        <td>Mouse</td>
+                        <td>Bilgisayar</td>
+                        <td>1500</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+                <br><br><br><br>
+                <p>İkinci alışveriş listesi aşağıda sıralanmıştır.</p>
+                <table class="table table-dark table-bordered table-hover">
+                    <caption class="text-center">İkinci Table</caption>
+                    <tr>
+                        <th>Id</th>
+                        <th>Ürün Adı</th>
+                        <th>Kategori</th>
+                        <th>Fiyat</th>
+                        <th>Stok Adedi</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Klavye</td>
+                        <td>Bilgisayar</td>
+                        <td>1500</td>
+                        <td>50</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>2</td>
+                        <td>Klavye</td>
+                        <td>Bilgisayar</td>
+                        <td>2500</td>
+                        <td>400</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>3</td>
+                        <td>Mouse</td>
+                        <td>Bilgisayar</td>
+                        <td>1500</td>
+                        <td>00</td>
+                    </tr>
+                </table>
+
+        </div>
+
+    </div>
+
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+            <p>New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/4.6/getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+    </footer>
+    </div>
+    </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+
+</html>

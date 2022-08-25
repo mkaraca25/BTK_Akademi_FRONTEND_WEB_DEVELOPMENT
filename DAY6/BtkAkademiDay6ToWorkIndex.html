@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin Template · Bootstrap v4.6</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/sign-in/">
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="apple-touch-icon" href="/docs/4.6/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/4.6/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/4.6/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/docs/4.6/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/docs/4.6/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        body {
+            background-color: bisque;
+        }
+        
+        h1,
+        h4 {
+            background-color: blueviolet;
+            color: bisque;
+            border-radius: 60px 15px 60px 15px;
+        }
+        
+        .btn {
+            border-radius: 15px 60px 15px 60px;
+        }
+        
+        .form-control {
+            background-color: aqua;
+            border-radius: 15px 15px 15px 15px;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+</head>
+
+<body class="text-center"><br>
+
+    <div class="container col-md-5">
+        <h4>BTK AKADEMİ FRONTEND WEB DEVELOPMENT</h4>
+        <form class="form-signin col-12">
+            <img class="mb-4 rounded-circle" src="resim.jpg" alt="" width="270px" height="270px">
+            <h1 class="h3 mb-3 font-weight-normal">
+                Lütfen giriş yapın</h1>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <div class="checkbox mb-2 col-lg-3"><br>
+                <label>
+                <input type="checkbox" value="remember-me"> Beni Hatırla
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" onclick="parent.location='BtkAkademiDay6ToWork.html'" value="Anasayfa" type="submit">Sign in</button>
+            <p class="mt-4 mb-3 text-muted">&copy; Mayk Software 2022</p>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

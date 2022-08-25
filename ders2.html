@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<input>
+<h2 id="baslik">9. DAY</h2>
+<p class="paragraf">Paragraflar</p>
+<p class="paragraf">Paragraflar</p>
+<p class="paragraf">Paragraflar</p>
+<p class="paragraf">Paragraflar</p>
+<p class="paragraf">Paragraflar</p>
+
+<div id="div1">
+    <p id="p1">PARAGRAF 1</p>
+    <p id="p2">PARAGRAF 2</p>
+</div>
+
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="ders1.html">Ders 1</a></li>
+    <li><a id="ders2" href="ders2.html">Ders 2</a></li>
+    <li><a href="ders3.html">Ders 3</a></li>
+    <li><a id="ders4" href="ders4.html">Ders 4</a></li>
+</ul>
+<script>
+    var baslik = document.getElementById("baslik");
+    var Paragraflar = document.querySelectorAll("p.paragraf")
+    baslik.addEventListener("mouseover", fonksiyonum)
+    var ders2Link = document.getElementById("ders2");
+    var ders4Link = document.getElementById("ders4");
+
+    ders2Link.addEventListener("mouseover", fonksiyonum);
+    ders4Link.addEventListener("mouseover", fonksiyon);
+
+    function fonksiyonum() {
+        Paragraflar[2].style.backgroundColor = "red"
+    }
+
+    function fonksiyon() {
+        alert("Full Stack Developer Melik KARACA")
+    }
+    var inputErisim = document.getElementById("input")[0]
+    var h1 = document.getElementsByTagName("h1")[0]
+    h1.addEventListener("mouseleave", mouseleave)
+    h1.addEventListener("mouseover", mouseover)
+
+    function mouseleave() {
+        inputErisim.value = "melik karaca"
+    }
+
+    function mouseover() {
+        inputErisim.value = "MELİK KARACA"
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ders1.html">Ders 1</a></li>
+        <li><a href="ders2.html">Ders 2</a></li>
+        <li><a href="ders3.html">Ders 3</a></li>
+        <li><a href="ders4.html">Ders 4</a></li>
+    </ul>
+    <h3 class="a"></h3>
+    <h3 class="a"></h3>
+    <h4 class="b"></h4>
+    <h4 class="b"></h4>
+    <p class="a"></p>
+    <p class="a"></p>
+    <p class="a"></p>
+    <p class="a"></p>
+    <p class="a"></p>
+    <script>
+        var ulkeElemanlari = ["Almanya", "Fansa", "Türkiye", "Japonya", "Polonya"]
+        console.log(typeof(ulkeElemanlari))
+            /*for (i = 0; i < ulkeElemanlari.length; i++) {
+                console.log(ulkeElemanlari[i].innerHTML)
+                if (ulkeElemanlari[i].innerHTML == "Almanya") {
+                    // alert("Etme Almanaya")
+                }
+            }*/
+        var aClassOlanlar = document.getElementsByClassName("a")
+        var aClassOlanH3ler = document.querySelectorAll("p.a")
+        for (i = 2; i < ulkeElemanlari.length + 2; i++) {
+
+            aClassOlanlar[i].innerHTML = ulkeElemanlari[i - 2]
+        }
+        /*var bClassOlanlar = document.getElementsByClassName("b")
+        var bClassOlanH4ler = document.querySelectorAll("h4.b")*/
+        aClassOlanH3ler[0].innerHTML = ulkeElemanlari[0]
+        aClassOlanH3ler[1].innerHTML = ulkeElemanlari[1]
+        aClassOlanH3ler[2].innerHTML = ulkeElemanlari[2]
+        aClassOlanH3ler[3].innerHTML = ulkeElemanlari[3]
+        aClassOlanH3ler[4].innerHTML = ulkeElemanlari[4]
+            //bClassOlanH4ler[0].innerHTML = ulkeElemanlari[3]
+            // bClassOlanH4ler[1].innerHTML = ulkeElemanlari[4]
+    </script>
+</body>
+
+</html>
