@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: bisque;
+        }
+        
+        #sayfa {
+            width: 500px;
+            margin: auto;
+            background: #3385b4;
+            padding: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-top: 5px;
+        }
+        
+        input {
+            width: 200px;
+            height: 25px;
+            font-size: 1.2em;
+        }
+        
+        button {
+            border: none;
+            display: block;
+            margin-top: 5px;
+            width: 204px;
+            height: 50px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        
+        table {
+            background: #0984e3;
+            margin: 5px;
+            width: 100%;
+            color: #fff;
+        }
+        
+        td,
+        th {
+            border: 1px solid white;
+            border-spacing: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container col-md-12">
+        <div class="row col-md-12">
+            <div class="col-lg-3 col-md-12 col-sm-12 text-center w-25 p-3" id="inputDiv">
+                <input type="text" placeholder="  İsminiz" id="isim" />
+                <br /><br />
+                <input type="text" placeholder="  Okulunuz" id="okul" />
+                <br /><br />
+                <input type="text" placeholder="  Yaşınız" id="yas" />
+                <br /><br />
+                <input type="text" placeholder="  Mail adresiniz" id="mail" />
+                <br /><br />
+                <button type="button" onclick="kaydet()">Kaydet</button>
+            </div>
+
+            <div class="col-lg-9 col-md-12 col-sm-12" id="tabloDiv">
+                <p id="paragraf" class="text-left">Bilgileriniz burada gözükecektir!</p>
+            </div>
+        </div>
+    </div>
+    <br /><br /><br /><br /><br /></div>
+
+
+
+    <script>
+        function kaydet() {
+            //inputtaki verileri alma
+            var isim = document.getElementById("isim").value;
+            var mail = document.getElementById("mail").value;
+            var yas = document.getElementById("yas").value;
+            var okul = document.getElementById("okul").value;
+
+            //tablonun yazılacağı divi değişkene atma
+            var tabloDiv = document.getElementById("tabloDiv");
+
+            //tablonun elemanlarını oluşturma
+            var table = document.createElement("table");
+            var thead = document.createElement("thead");
+            var tbody = document.createElement("tbody");
+
+            //içeriklerin satırını ekleme
+            var trKisi = document.createElement("tr");
+
+            //dataların içini doldurma
+            var tdAd = document.createElement("td");
+            tdAd.innerHTML = isim;
+            var tdMail = document.createElement("td");
+            tdMail.innerHTML = mail;
+            var tdYas = document.createElement("td");
+            tdYas.innerHTML = yas;
+            var tdOkul = document.createElement("td");
+            tdOkul.innerHTML = okul;
+
+            //dataları satıra ekleme
+            trKisi.appendChild(tdAd);
+            trKisi.appendChild(tdMail);
+            trKisi.appendChild(tdYas);
+            trKisi.appendChild(tdOkul);
+
+            //satırları tablonun bodysine ekleme
+            tbody.appendChild(trKisi);
+
+            //tabloya tbody yi ekleme
+            table.appendChild(tbody);
+
+            //dive class ekleme
+            tabloDiv.classList.add("table", "text-left");
+
+            //tablonun başlığının olup olmadığını kontrol etme
+            var baslikKontrol = document.querySelector("#tabloDiv > table > thead");
+            if (baslikKontrol == null) {
+
+                //th başlıklarını oluşturma
+                var thAd = document.createElement("th");
+                var thMail = document.createElement("th");
+                var thYas = document.createElement("th");
+                var thOkul = document.createElement("th");
+                console.log(baslikKontrol);
+
+                //başlıkların içeriklerini girme
+                thAd.innerHTML = "İsim";
+                thMail.innerHTML = "Mail";
+                thYas.innerHTML = "Yaş";
+                thOkul.innerHTML = "Okul";
+
+                //başlıkların etiketlerini ekleme
+                thead.appendChild(thAd);
+                thead.appendChild(thMail);
+                thead.appendChild(thYas);
+                thead.appendChild(thOkul);
+
+                //tabloya thead i ekleme
+                tabloDiv.appendChild(table);
+                table.appendChild(thead);
+                table.appendChild(tbody);
+
+                //thead e classlar ekleme
+                thead.setAttribute('class', 'table-warning')
+
+                //tbody ye classlar ekleme
+                tbody.setAttribute('class', 'table-info')
+
+                //table a classlar ekleme
+                table.setAttribute('class', 'table')
+                table.setAttribute('class', 'table-bordered')
+                table.setAttribute('class', 'w-75')
+
+                //paragrafın içeriğini değiştirme
+                document.getElementById('paragraf').innerHTML = "Bilgileriniz;"
+
+            } else {
+                var eklenecekYer = document.querySelector(
+                    "#tabloDiv > table:nth-child(2) > tbody"
+                );
+                eklenecekYer.appendChild(trKisi);
+            }
+
+            //inputları sıfırlama
+            document.getElementById("isim").value = "";
+            document.getElementById("mail").value = "";
+            document.getElementById("yas").value = "";
+            document.getElementById("okul").value = "";
+        }
+    </script>
+    <ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="ders1.html">Ders 1</a></li>
+        <li><a href="ders2.html">Ders 2</a></li>
+        <li><a href="ders3.html">Ders 3</a></li>
+        <li><a href="ders4.html">Ders 4</a></li>
+
+    </ul>
+</body>
+
+</html>

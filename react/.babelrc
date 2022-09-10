@@ -1,0 +1,3 @@
+{
+    "presets": ["@base/presets-env", "@base/presets-react"]
+}

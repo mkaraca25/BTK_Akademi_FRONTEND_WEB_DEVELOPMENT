@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: bisque;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h1 text-align="center">JS ÖĞRENİYORUM</h1>
+        <div class="row col-md-12">
+            <div class="jumbotron text-center col-md-3">
+                <div class="list-group">
+                    <a href="index.html" class="list-group-item list-group-item-action">Anasayfa</a>
+                    <a href="kullanici.html" class="list-group-item list-group-item-action">JS Öğreniyorum</a>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+<script>
+    var dizim = []
+    var kucuk = []
+    var buyuk = []
+        /*for (var i = 0; i < 10; i++) {
+            dizim[i] = prompt("Lütfen şehir giriniz :")
+
+        }*/
+    dizim.forEach(a => {
+        if (a.length < 5) {
+            kucuk.push(a)
+        } else {
+            buyuk.push(a)
+        }
+
+    });
+    console.log("Büyük şehirler :", buyuk + "\nKüçük şehirler :", kucuk)
+    var dizi = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    var mapDizi = dizi.map(sayi => sayi * 2)
+    console.log("Map :", mapDizi)
+    var filterDizim = dizi.filter(sayi => sayi > 5)
+    console.log("Filter :", filterDizim)
+    var reduceDizim = dizi.reduce((acc, a) => {
+        return acc * a
+    }, 100);
+
+
+    console.log("Reduce :", reduceDizim)
+</script>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: bisque;
+    }
+</style>
+
+<body>
+
+    <h3 class="cuma"></h3>
+    <h3 class="cuma"></h3>
+    <h3 class="cuma"></h3>
+    <ol>
+        <li class="cuma"></li>
+        <li class="cuma"></li>
+        <li class="cuma"></li>
+        <li class="cuma"></li>
+        <li class="cuma"></li>
+    </ol>
+    <script>
+        var h3lar = ["YAZILIM", "SOFTWARE", "MÜHENDİS"]
+        var sehirler = ["ERZURUM", "ANKARA", "HATAY", "TRABZON", "ADANA"]
+
+        var h3Olanlar = document.querySelectorAll('h3.cuma')
+        var sehirOlanlar = document.querySelectorAll('li.cuma')
+
+
+        for (i = 0; i < h3lar.length; i++) {
+            h3Olanlar[i].innerHTML = h3lar[i]
+            console.log(h3Olanlar[i])
+        }
+
+        for (i = 0; i < sehirler.length; i++) {
+            sehirOlanlar[i].innerHTML = sehirler[i]
+        }
+        h3Olanlar[1].addEventListener('click', baslik)
+        sehirOlanlar[2].addEventListener('click', sehir)
+
+        function sehir() {
+
+            sehirOlanlar[2].style.backgroundColor = 'red'
+            sehirOlanlar[2].style.color = 'yellow'
+
+        }
+
+        function baslik() {
+
+            sehirOlanlar[4].innerHTML = h3Olanlar[1].innerHTML
+            sehirOlanlar[0].innerHTML = h3Olanlar[0].innerHTML
+        }
+    </script>
+</body>
+
+</html>

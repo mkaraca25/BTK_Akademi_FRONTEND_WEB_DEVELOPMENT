@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //var dateDay = prompt("Lütfen doğum tarihinizi yazınız :17/04/1994")
+
+        /*-for (i = 0; i < dateDay.length; i++) {
+            dateDay = dateDay.replace("/", "-")
+        }
+        alert(dateDay)*/
+        /*var metin = []
+        for (i = 0; i < dateDay.length; i++) {
+            if (dateDay[i] == "/") {
+                metin = metin + "-"
+            } else {
+                metin = metin + dateDay[i]
+            }
+        }
+        alert(metin)*/
+        var met = prompt("Lütfen küçük metin yazınız ")
+        var metin = []
+        for (i = 0; i < met.length; i++) {
+            if (met[i] == "ç") {
+                metin = metin + "c"
+            } else if (met[i] == "ğ") {
+                metin = metin + "g"
+            } else if (met[i] == "ı") {
+                metin = metin + "i"
+            } else {
+                metin = metin + met[i]
+            }
+        }
+        alert(metin)
+    </script>
+</body>
+
+</html>

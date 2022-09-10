@@ -15,6 +15,7 @@
 <p class="paragraf">Paragraflar</p>
 <p class="paragraf">Paragraflar</p>
 <p class="paragraf">Paragraflar</p>
+<input type="text" id="input" />
 
 <div id="div1">
     <p id="p1">PARAGRAF 1</p>
@@ -57,6 +58,14 @@
     function mouseover() {
         inputErisim.value = "MELİK KARACA"
     }
+    var baslik = document.createElement("h3")
+    var node = document.createTextNode("Merhaba ben Melik KARACA")
+    baslik.appendChild(node)
+    var div1 = document.getElementById("div1")
+    var p2 = document.getElementById("p2")
+    div1.insertBefore(baslik, p2)
+    div1.removeChild(p2)
+    div1.replaceChild(baslik, p1)
 </script>
 </body>
 

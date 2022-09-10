@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function selamla() {
+            console.log("Selamlar 1")
+        }
+        selamla()
+        const selam = function selamlar2() {
+            console.log("Selamlar 2")
+        }
+        selam()
+        const selam3 = (a) => {
+            console.log("Selam 3", a)
+        }
+        selam3("selam")
+        let ad = "Melik"
+        var degisken = 22
+
+        function islem() {
+            degisken = 44
+            console.log("değişti", degisken)
+        }
+        islem()
+        const isimler = ["YAZILIM", "Melik", "YAZILIM"]
+        isimler.push("Mayk")
+        console.log("isimler :", isimler)
+        console.log(ad)
+        var dizi = [1, 2, 3, 4, 5, 6]
+        var kareDizisi = []
+
+        dizi.forEach(a => {
+            kareDizisi.push(a ** 2)
+
+        });
+        /*TekDizisi = []
+        CiftDizisi = []
+        dizi.forEach(a => {
+            if (mod == 1) {
+                TekDizisi.push(a ** 2)
+            } else if (a % 2 == 0) {
+                CiftDizisi.push(a ** 3)
+            }
+        });
+        console.log(TekDizisi, CiftDizisi)*/
+        /*dizim = []
+        kucuk = []
+        buyuk = []
+        for (i = 0; i < 10; i++) {
+            dizim[i] = prompt("Lütfen kelime giriniz")
+        }
+        console.log(dizim)
+        dizim.forEach(a => {
+            if (a.length < 5)
+                kucuk.push(a)
+            else
+                buyuk.push(a)
+        });
+        console.log("5'ten Buyuk olanlar=\n", buyuk + "\n5'ten Kucuk olanlar=\n", kucuk)*/
+        var dizim = [1, 2, 3, 4, 5]
+        var mapdizi = dizim.map((sayi, i) => (sayi ** 3))
+        console.log(mapdizi)
+        var yenidizim = dizi.filter(a => a > 3)
+        console.log(yenidizim)
+        var reduceDizisi = dizim.reduce((acc, a) => {
+            return acc + a
+        })
+        console.log(reduceDizisi)
+    </script>
+</body>
+
+</html>
